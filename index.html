@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px; background-color: #CCCCCC; border: 1px solid orange;}
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+        <label for="id">8-Digit Employee ID</label><br>
+        <input type="text" id="id" name="nm-id" maxlength="8" required><br> 
+
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="nm-name" required><br>
+
+        <label for="ext">4-Digit Extension</label><br>
+        <input type="text" id="ext" name="nm-ext" required><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="nm-email" required><br>
+
+        <label for="department">Department</label><br>
+        <select id="department" name="nm-department" required class="mb-4">
+            <option value="Administrative">Administrative</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Executive">Executive</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Quality Assurance">Quality Assurance</option>
+            <option value="Sales">Sales</option>
+        </select><br>
+
+        <input type="submit" id="submit" name="nm-submit" value="Add Employee" class="btn btn-primary">
+
+    </form>
+</body>
+</html>
